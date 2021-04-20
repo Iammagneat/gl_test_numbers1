@@ -1,5 +1,5 @@
 with open('numbers.txt') as file:
-    text_list = [line.rstrip('\n') for line in file]
+    text_list = [line.rstrip() for line in file]
 x = 0
 for i in text_list:
     if not i.startswith('#'):
